@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: left;
+  color: black;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvTpf97kddqNhNOpvn4DFJCjQXG1MOz7Tevg&usqp=CAU);
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+   background-color: white;
+   padding: 40px;
+   margin-top: 20px;
+}
+
+.newcard{
+   background-color: white;
+   padding: 80px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: #0478aa;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#count {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+  margin: 0;
+}
+.button, #count {
+  float: left;
+}
+
+#minus {
+  margin: 25px 1% 0 0%;
+}
+
+#plus {
+  margin: 25px 0% 0 1%;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>University of Waterloo</h2>
+  <p>r/uwaterloo</p>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+      <div class="newcard">
+          <h2>What's it REALLY like to physically be in engineering?</h2>
+          <h5>Date posted: July 1, 2022</h5>
+          <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+
+          <p>
+              hello r/uwaterloo!
+          </p>
+
+          <p>
+              For all you high schoolers wanting to come to UW. Sure, the co-op program is great, and it’s the top university in Canada etcetcetc. Have you actually thought about what it’ll be like on campus? You know, the place you’ll be stuck in for 4+ years? Sure, tours exist, but they only give you a snapshot—a few hours at most while the tour guides shill UW to you as hard as they can. Those memes about depression and being stuck in windowless rooms all day don’t come from nowhere. How bad is it really though?
+          </p>
+
+          <p>
+              Wonder no more, nerds.
+
+          </p>
+
+          <p>
+              We’ve collected hours worth of data on the environmental conditions a typical Systems Design Engineering student experiences over the course of a day. We’re working to represent other programs, but as 3A SYDEs, this is just the starting point. Does the school care enough to turn on AC? What is a day in the life of a (syde) student actually like? Keep reading to see what we found out.
+          </p>
+
+          <h1>Temperature</h1>
+          <a href="https://imgur.com/Wzrbwms" target="_blank">Link to temperature graphs</a>
+          <p>
+              If you’ve never been stuffed in a classroom with over 90 people because your department overshot their admission targets AGAIN (ahem CS 225%), you’re in for a surprise. <b>There's usually a nice <a href="https://imgur.com/k5W4HSM" target="_blank">spike</a> at the start of the day.</b>  Multiple faculty and admin have also flagged overcrowding as a problem affecting temperature control. Dress cool and hope your classmates showered.
+          </p>
+
+          <p>
+              Temperature was overall pretty consistently at or above (even with AC!) the higher range of recommended temps (source: ASHRAE standards). HOWEVER, this data doesn’t include the days spent in 30+ degree C temperatures in June because plant ops wouldn’t turn on the AC. Class attendance dropped off a cliff at this time, because it <b>sucked.</b>
+          </p>
+
+          <p>
+              and no, the AC didn’t turn on until a critical mass of *profs* complained (they didn’t listen to student complaints lol). To all you incoming first-years, please for the love of mr goose elect class reps and communicate with your profs and department admin!
+          </p>
+
+
+          <h1>Humidity</h1>
+          <a href="https://imgur.com/WgCmanQ" target="_blank">Link to humidity graphs</a>
+          <p>
+              Pretty much always juuust above the recommended range for humidity. However, e7 is def one of the newer/swankier buildings on campus, so we probably have it better. CS/arts/non-SYDE plebs: take this data with a grain of salt, because you will likely spend your days in buildings that are 50+ years old ;)
+          </p>
+
+          <h1>Light</h1>
+          <a href="https://imgur.com/8W3soUX" target="_blank">Link to light graphs</a>
+          <p>
+              Ahh, the one we’ve all been waiting for. Keep in mind that we SYDE-chads stay in E5 all day, so we have windows (which can’t be said for the majority of buildings on campus). That being said, we usually hover juuuuust under the recommended range for lecture halls. So for the rest of y’all in your windowless <s>dungeons</s> classrooms, invest in some vitamin D.
+</p>
+
+          <p>
+              In fact, you can see that the DC basement gets about <a href="https://imgur.com/hH6ZDUf" target="_blank">250lux</a>. Great for all you nocturnal nerds I see gaming in DC silent study, not great if you value your health and wellbeing. For context, ambient daylight is usually at least 10,000 lux. Scientific proof that y’all need to go outside, touch some grass, and maybe lobby the school for more windows.
+          </p>
+
+          <h1>End Notes</h1>
+          <p>
+              In summary:
+          </p>
+
+          <ul>
+              <li>
+                  classrooms are decent (though overcrowded) when there’s AC, terrible when there isn’t
+              </li>
+              <li>rather humid during the summer, subjectively decent once you get used to it</li>
+              <li>we don’t get enough light</li>
+          </ul>
+
+          <p>
+              To the incoming students, book shadow days with current students if you’re interested in experiencing an actual day. Also, make sure you and your class have a good relationship with your profs—they have more clout than you. Shower. And go outside.
+          </p>
+
+          <p>
+              <b>What's next:</b> let us know what other buildings/faculties you’d like to see data for! All data was collected by carrying an arduino around to our classes/study sessions.
+          </p>
+          <div>
+              <p class="button" id="minus">-</p>
+              <p id="count">0</p>
+              <p class="button" id="plus">+</p>
+          </div>
+      </div>
+        <div class="card">
+          <h2>Upcoming-Reviewing environment in a Tron's day to day</h2>
+          <h5>TBD</h5>
+          <p>STAY TUNED</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About community</h2>
+          <p>Unofficial Student and Alumni-run Reddit for the University of Waterloo community.</p>
+          <p>81.9k members</p>
+          <p>500 online</p>
+          <p>Created Oct 28, 2009</p>
+        </div>
+        <div class="card">
+          <h3>Other Posts</h3>
+          <div class="fakeimg">Image</div><br>
+          <div class="fakeimg">Image</div><br>
+          <div class="fakeimg">Image</div>
+        </div>
+        <div class="card">
+          <h3>r/uwaterloo Rules</h3>
+          <p>1.Personal Info</p>
+        <p>No personally identifiable information (PII) is allowed...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <button class="button button4">Back to top</button>
+    </div>
+    </body>
+
+    <script type="text/javascript">
+        var counter = 0;
+
+         $("#plus").click(function(){
+         counter++;
+         $("#count").text(counter);
+         });
+
+         $("#minus").click(function(){
+         counter--;
+         $("#count").text(counter);
+     });
+     </script>
+    </html>
